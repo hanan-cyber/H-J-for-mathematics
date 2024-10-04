@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&J for Mathematics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #graph {
+            width: 80%;
+            height: 400px;
+            margin: 20px auto;
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>H&J for Mathematics - آلة حاسبة الرسوم البيانية</h1>
+    <div>
+        <input type="text" id="equation" placeholder="أدخل الدالة الرياضية (مثلاً: x^2)" />
+        <button onclick="plotGraph()">ارسم الدالة</button>
+    </div>
+    <div id="graph"></div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
